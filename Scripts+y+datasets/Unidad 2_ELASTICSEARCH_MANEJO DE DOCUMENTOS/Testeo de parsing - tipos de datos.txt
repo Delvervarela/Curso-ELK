@@ -1,0 +1,25 @@
+# Creacion de indice y documento
+PUT /index_test/_doc/1
+{
+    "price": 7.4
+}
+
+#nuevo documento con campo float dentro de string
+PUT /index_test/_doc/2
+{
+    "price": "5.3"
+}
+
+#Nuevo documento con valor invalido
+PUT /index_test/_doc/3
+{
+    "price": "5.3m"
+}
+
+GET /index_test/_search
+{
+    "query": {
+        "match_all": {}
+    }
+}
+

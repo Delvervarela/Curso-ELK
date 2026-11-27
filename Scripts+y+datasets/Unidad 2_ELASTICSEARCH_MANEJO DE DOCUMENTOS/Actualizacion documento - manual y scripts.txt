@@ -1,0 +1,63 @@
+#ACTUALIZACION MANUAL DE UN DOCUMENTO
+
+# Eliminar un documento
+GET /productos/_doc/1
+
+#Indexar un docuemnto especificando ID=1
+PUT /productos/_doc/1
+{
+    "nombre": "pan",
+    "precio": 2,
+    "stock": 20
+}
+
+GET /productos/_doc/1
+
+#Actualizar un documento por id=1
+POST /productos/_update/1
+{
+    "doc": {
+        "precio": 4
+    }
+}
+#Actualizar un documento por id=1
+POST /productos/_update/1
+{
+    "doc": {
+        "stock": 0
+    }
+}
+
+#Añadir un nuevo campo al documento por ID
+POST /productos/_update/1
+{
+    "doc": {
+        "etiquetas": ["comida", "rapido"]
+    }
+}
+
+#ACTUALIZACION POR SCRIPTS Y CONDICIONES PARA LA ACTUALIZACION DE UN DOCUMENTO
+POST /productos/_update/1
+{
+    "script": {
+        "source": "ctx._source.stock -= params.cantidad_comprada",
+        "params": {
+            "cantidad_comprada": 2
+        }
+    }
+}
+
+GET /productos/_doc/1
+
+# Script con condicional - cuando es condicional se abre y cierra en 3 comillas
+POST /productos/_update/1
+{
+    "script": {
+        "source": """
+            if (ctx._source.stock > 0) {
+                ctx._source.stock--;
+            }
+            """     
+    }
+}
+

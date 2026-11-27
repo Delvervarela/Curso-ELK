@@ -1,0 +1,64 @@
+//Construccion de analizador personalizado HTML
+PUT /index_analizador_1
+{
+    "settings": {
+        "analysis": {
+            "analyzer": {
+                "mi_analizador_personalizado": {
+                    "type": "custom",
+                    "char_filter": ["html_strip"],
+                    "tokenizer": "standard",
+                    "filter": ["lowercase"]
+                }
+            }
+        }
+    }
+}
+
+#Comprobar analizador con texto HTML
+POST /index_analizador_1/_analyze
+{
+    "analyzer": "mi_analizador_personalizado",
+    "text": "I&apos;m en <em>castellano</em> significa&nbsp;-&nbsp;Yo <strong>soy</strong>"
+}
+
+#Construccion de un analizador personalizado html con filtro palabras parada español
+PUT /index_analizador_2
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "castellano_stop": {"type": "stop", "stopwords": "_spanish_"}
+            },
+            "analyzer": {
+                "mi_analizador_personalizado":{
+                    "type": "custom",
+                    "char_filter": ["html_strip"],
+                    "tokenizer": "standard",
+                    "filter": ["lowercase", "castellano_stop"]
+                }
+            }
+        }
+    }
+}
+
+#Añadir un analizador a un index ya creado (si ponemos el mismo nombre se actualizaria el existente)
+POST /index_analizador_1/_close
+
+PUT /index_analizador_1/_settings
+{
+        "analysis": {
+            "analyzer": {
+                "mi_segundo_analizador": {
+                    "type": "custom",
+                    "char_filter": ["html_strip"],
+                    "tokenizer": "standard",
+                    "filter": ["lowercase"]
+                }
+            }
+        }
+    }
+
+    POST /index_analizador_1/_open
+    GET /index_analizador_1/_settings
+

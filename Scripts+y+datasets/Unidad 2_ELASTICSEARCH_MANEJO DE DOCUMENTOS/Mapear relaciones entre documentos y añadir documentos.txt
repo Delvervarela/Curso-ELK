@@ -1,0 +1,79 @@
+#Crear index
+PUT /departamento
+
+#Mapeo
+PUT /departamento/_mapping
+{
+  "properties":
+  {
+    "campo_combinacion": {
+      "type": "join",
+      "relations": {
+        "departamentos": "empleados"
+      }
+    }
+  }
+}
+
+#Añadir Departamentos
+PUT /departamento/_doc/1
+{
+  "nombre": "Tecnologia",
+  "campo_combinacion": "departamentos"
+}
+PUT /departamento/_doc/2
+{
+  "nombre": "Marketing",
+  "campo_combinacion": "departamentos"
+}
+
+#Añadir los empleados a los departamentos
+PUT /departamento/_doc/3?routing=1
+{
+  "name_empleado": "Ivan",
+  "edad": 36,
+  "genero": "M",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 1
+  }
+}
+PUT /departamento/_doc/4?routing=1
+{
+  "name_empleado": "Marta",
+  "edad": 36,
+  "genero": "F",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 1
+  }
+}
+
+PUT /departamento/_doc/5?routing=2
+{
+  "name_empleado": "Ana",
+  "edad": 38,
+  "genero": "F",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 2
+  }
+}
+
+PUT /departamento/_doc/6?routing=2
+{
+  "name_empleado": "Pedro",
+  "edad": 45,
+  "genero": "M",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 2
+  }
+}
+
+
+GET /departamento/_search
+{"query": {"match_all": {}}}
+
+
+

@@ -1,0 +1,27 @@
+#Crea plantilla de "logs"
+PUT /_template/logs
+{
+    "index_patterns": ["logs_*"],
+
+    "mappings": {
+        "properties": {
+            "@timestamp": {
+                "type": "date"
+            },
+            "url.original":{
+                "type": "keyword"
+            },
+            "http.response.status_code":{
+                "type": "long"
+            }
+        }
+    }
+}
+
+#Añadir index que cumple el patron de la plantilla
+PUT /logs_2024-01
+#Añadir index que cumple el patron de la plantilla
+PUT /logs_2024-02
+
+#Verificamos el mapping del index
+GET /logs_2024-02

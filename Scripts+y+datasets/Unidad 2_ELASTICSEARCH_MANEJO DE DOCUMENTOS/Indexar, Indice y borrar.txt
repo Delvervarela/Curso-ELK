@@ -1,0 +1,35 @@
+#para ver el estado del cluster
+GET /_cluster/health
+
+# Insertar un Index
+PUT /productos
+{
+    "settings": {
+             "number_of_shards": 2,
+             "number_of_replicas": 2
+        
+    }
+}
+
+#Indexar un documento
+POST /productos/_doc
+{
+    "nombre":"leche",
+    "precio": 10
+}
+
+#Indexar un docuemnto especificando ID=1
+PUT /productos/_doc/1
+{
+    "nombre": "pan",
+    "precio": 2
+}
+
+#Obtener docuementos por ID
+GET /productos/_doc/1
+
+GET /productos/_doc/npQsE6IBPZRcGFfU_RWP
+
+#Borrar indice
+DELETE /productos
+

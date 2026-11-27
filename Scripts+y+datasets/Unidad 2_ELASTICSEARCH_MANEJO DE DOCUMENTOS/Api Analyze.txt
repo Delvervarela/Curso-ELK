@@ -1,0 +1,17 @@
+#Api Analyze
+POST /_analyze
+{
+    "text": "5 amigos salen    a pasear, pero el ultimo llega...... ¡TARDE! :-)",
+    "analyzer": "standard"
+}
+
+POST /_analyze
+{
+    "text": "5 amigos salen    a pasear, pero el ultimo llega...... ¡TARDE! :-)",
+    "char_filter": [],
+    "tokenizer": "standard",
+    "filter": ["lowercase"]
+}
+
+
+

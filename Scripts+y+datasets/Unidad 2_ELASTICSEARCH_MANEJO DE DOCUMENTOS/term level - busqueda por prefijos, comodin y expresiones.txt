@@ -1,0 +1,53 @@
+#Verificamos todos los elementos
+GET /productos/_search
+{
+    "query": {"match_all": {}}
+}
+
+#Indexamos un documento sin el campo precio
+PUT /productos/_doc/120
+{
+    "name": "pan",
+    "stock": 80,
+    "created": "2024-08-01"
+}
+
+#Busqueda por valores diferentes de null
+GET /productos/_search
+{
+    "query": {
+        "exists": {"field": "price"}
+    }
+}
+
+#Busqueda por un prefijo
+GET /productos/_search
+{
+    "query": {"prefix": {
+      "name": "pa"
+      }
+    }}
+
+#Busqueda por comidin
+GET /productos/_search
+{
+    "query": {"wildcard": {
+      "tags": "mo*le"
+      }
+    }}
+
+GET /productos/_search
+{
+    "query": {"wildcard": {
+      "tags": "mo?ile"
+    }}
+}
+
+
+#Busqueda de expresion regular
+GET /productos/_search
+{
+    "query": {"regexp": {
+      "tags": "mobi[a-zA-Z]le"
+    }}
+}

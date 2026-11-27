@@ -1,0 +1,14 @@
+#Buckets
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "bucket_estados": {
+      "terms": {
+        "field": "estado",
+        "size": 20,
+        "missing": "No aplica"
+      }
+    }
+  }
+}

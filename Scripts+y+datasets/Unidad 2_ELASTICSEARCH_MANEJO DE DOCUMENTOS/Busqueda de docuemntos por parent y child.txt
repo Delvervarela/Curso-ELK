@@ -1,0 +1,50 @@
+#Busqueda por parent id (departamento)
+GET /departamento/_search
+{
+  "query": {
+    "parent_id": {
+      "type": "empleados",
+      "id": 2
+    }
+  }
+}
+
+#Busqueda de documentos child por un criterio del parent
+GET /departamento/_search
+{
+  "query": {"has_parent": {
+    "parent_type": "departamentos",
+    "score": true,
+    "query": {
+      "term": {
+        "nombre.keyword": "Tecnologia" 
+      }
+    }
+  }}
+}
+
+#Busqueda de docuemntos parent por un criterio de los child
+GET /departamento/_search
+{
+  "query": {"has_child": {
+    "type": "empleados",
+    "score_mode": "avg",
+    "min_children": 1,
+    "max_children": 10,
+    "query": {
+      "bool": {
+        "must": [
+      { "range": {
+        "edad": {
+          "gte": 37
+        }
+      }}
+    ],
+    "should": [
+      {"term": {
+        "genero": "M"
+      }}
+    ]
+    }}
+  }}
+}

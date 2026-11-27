@@ -1,0 +1,102 @@
+{"index":{"_id":1}}
+{"fecha_compra":"2026-04-15T10:00:00Z","cantidad":2,"importe":129.99,"producto_id":1,"canal_venta":"tienda_en_linea","estado":"completada","total_importe":259.98,"vendedor":"Laura Méndez","nombre":"Carlos","apellido":"Ramírez"}
+{"index":{"_id":2}}
+{"fecha_compra":"2026-04-16T11:00:00Z","cantidad":3,"importe":24.5,"producto_id":2,"canal_venta":"tienda_fisica","estado":"completada","total_importe":73.5,"vendedor":"Diego Torres","nombre":"María","apellido":"López"}
+{"index":{"_id":3}}
+{"fecha_compra":"2026-04-17T12:00:00Z","cantidad":1,"importe":89.95,"producto_id":3,"canal_venta":"mercado_en_linea","estado":"enviada","total_importe":89.95,"vendedor":"Ana Castillo","nombre":"Jorge","apellido":"Hernández"}
+{"index":{"_id":4}}
+{"fecha_compra":"2026-04-18T13:00:00Z","cantidad":2,"importe":39.99,"producto_id":4,"canal_venta":"tienda_en_linea","estado":"pendiente","total_importe":79.98,"vendedor":"Miguel Rojas","nombre":"Sofía","apellido":"García"}
+{"index":{"_id":5}}
+{"fecha_compra":"2026-04-19T14:00:00Z","cantidad":1,"importe":74.99,"producto_id":5,"canal_venta":"telefono","estado":"completada","total_importe":74.99,"vendedor":"Elena Vargas","nombre":"Andrés","apellido":"Flores"}
+{"index":{"_id":6}}
+{"fecha_compra":"2026-04-20T15:00:00Z","cantidad":4,"importe":19.99,"producto_id":6,"canal_venta":"tienda_fisica","estado":"completada","total_importe":79.96,"vendedor":"Pablo Navarro","nombre":"Valentina","apellido":"Cruz"}
+{"index":{"_id":7}}
+{"fecha_compra":"2026-04-21T16:00:00Z","cantidad":2,"importe":54.95,"producto_id":7,"canal_venta":"tienda_en_linea","estado":"en_preparacion","total_importe":109.9,"vendedor":"Camila Reyes","nombre":"Mateo","apellido":"Ortiz"}
+{"index":{"_id":8}}
+{"fecha_compra":"2026-04-22T17:00:00Z","cantidad":5,"importe":8.99,"producto_id":8,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":44.95,"vendedor":"Luis Herrera","nombre":"Isabella","apellido":"Morales"}
+{"index":{"_id":9}}
+{"fecha_compra":"2026-04-23T18:00:00Z","cantidad":1,"importe":99.99,"producto_id":9,"canal_venta":"tienda_fisica","estado":"cancelada","total_importe":99.99,"vendedor":"Daniela Soto","nombre":"Emilio","apellido":"Navarro"}
+{"index":{"_id":10}}
+{"fecha_compra":"2026-04-24T19:00:00Z","cantidad":3,"importe":29.95,"producto_id":10,"canal_venta":"telefono","estado":"completada","total_importe":89.85,"vendedor":"Ricardo Peña","nombre":"Gabriela","apellido":"Mendoza"}
+{"index":{"_id":11}}
+{"fecha_compra":"2026-04-15T10:30:00Z","cantidad":2,"importe":16.5,"producto_id":11,"canal_venta":"tienda_en_linea","estado":"completada","total_importe":33,"vendedor":"Laura Méndez","nombre":"Diego","apellido":"Torres"}
+{"index":{"_id":12}}
+{"fecha_compra":"2026-04-16T11:30:00Z","cantidad":1,"importe":219.99,"producto_id":12,"canal_venta":"tienda_fisica","estado":"enviada","total_importe":219.99,"vendedor":"Diego Torres","nombre":"Lucía","apellido":"Castillo"}
+{"index":{"_id":13}}
+{"fecha_compra":"2026-04-17T12:30:00Z","cantidad":3,"importe":34.99,"producto_id":13,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":104.97,"vendedor":"Ana Castillo","nombre":"Alejandro","apellido":"Rojas"}
+{"index":{"_id":14}}
+{"fecha_compra":"2026-04-18T13:30:00Z","cantidad":2,"importe":45,"producto_id":14,"canal_venta":"tienda_en_linea","estado":"pendiente","total_importe":90,"vendedor":"Miguel Rojas","nombre":"Camila","apellido":"Vargas"}
+{"index":{"_id":15}}
+{"fecha_compra":"2026-04-19T14:30:00Z","cantidad":1,"importe":32.75,"producto_id":15,"canal_venta":"telefono","estado":"completada","total_importe":32.75,"vendedor":"Elena Vargas","nombre":"Daniel","apellido":"Navarro"}
+{"index":{"_id":16}}
+{"fecha_compra":"2026-04-20T15:30:00Z","cantidad":2,"importe":69.99,"producto_id":16,"canal_venta":"tienda_fisica","estado":"completada","total_importe":139.98,"vendedor":"Pablo Navarro","nombre":"Paula","apellido":"Reyes"}
+{"index":{"_id":17}}
+{"fecha_compra":"2026-04-21T16:30:00Z","cantidad":1,"importe":38.5,"producto_id":17,"canal_venta":"tienda_en_linea","estado":"en_preparacion","total_importe":38.5,"vendedor":"Camila Reyes","nombre":"Fernando","apellido":"Herrera"}
+{"index":{"_id":18}}
+{"fecha_compra":"2026-04-22T17:30:00Z","cantidad":3,"importe":49.99,"producto_id":18,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":149.97,"vendedor":"Luis Herrera","nombre":"Elena","apellido":"Soto"}
+{"index":{"_id":19}}
+{"fecha_compra":"2026-04-23T18:30:00Z","cantidad":2,"importe":27.99,"producto_id":19,"canal_venta":"tienda_fisica","estado":"completada","total_importe":55.98,"vendedor":"Daniela Soto","nombre":"Ricardo","apellido":"Peña"}
+{"index":{"_id":20}}
+{"fecha_compra":"2026-04-24T19:30:00Z","cantidad":1,"importe":31.95,"producto_id":20,"canal_venta":"telefono","estado":"cancelada","total_importe":31.95,"vendedor":"Ricardo Peña","nombre":"Victoria","apellido":"Méndez"}
+{"index":{"_id":21}}
+{"fecha_compra":"2026-04-15T10:15:00Z","cantidad":2,"importe":26.99,"producto_id":21,"canal_venta":"tienda_en_linea","estado":"completada","total_importe":53.98,"vendedor":"Laura Méndez","nombre":"Mateo","apellido":"Herrera"}
+{"index":{"_id":22}}
+{"fecha_compra":"2026-04-16T11:15:00Z","cantidad":1,"importe":42.99,"producto_id":22,"canal_venta":"tienda_fisica","estado":"enviada","total_importe":42.99,"vendedor":"Diego Torres","nombre":"Gabriela","apellido":"Mendoza"}
+{"index":{"_id":23}}
+{"fecha_compra":"2026-04-17T12:15:00Z","cantidad":2,"importe":159.99,"producto_id":23,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":319.98,"vendedor":"Ana Castillo","nombre":"Carlos","apellido":"Ramírez"}
+{"index":{"_id":24}}
+{"fecha_compra":"2026-04-18T13:15:00Z","cantidad":1,"importe":84.5,"producto_id":24,"canal_venta":"tienda_en_linea","estado":"pendiente","total_importe":84.5,"vendedor":"Miguel Rojas","nombre":"María","apellido":"López"}
+{"index":{"_id":25}}
+{"fecha_compra":"2026-04-19T14:15:00Z","cantidad":3,"importe":36.99,"producto_id":25,"canal_venta":"telefono","estado":"completada","total_importe":110.97,"vendedor":"Elena Vargas","nombre":"Jorge","apellido":"Hernández"}
+{"index":{"_id":26}}
+{"fecha_compra":"2026-04-20T15:15:00Z","cantidad":2,"importe":52.99,"producto_id":26,"canal_venta":"tienda_fisica","estado":"completada","total_importe":105.98,"vendedor":"Pablo Navarro","nombre":"Sofía","apellido":"García"}
+{"index":{"_id":27}}
+{"fecha_compra":"2026-04-21T16:15:00Z","cantidad":1,"importe":14.99,"producto_id":27,"canal_venta":"tienda_en_linea","estado":"en_preparacion","total_importe":14.99,"vendedor":"Camila Reyes","nombre":"Andrés","apellido":"Flores"}
+{"index":{"_id":28}}
+{"fecha_compra":"2026-04-22T17:15:00Z","cantidad":2,"importe":22.95,"producto_id":28,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":45.9,"vendedor":"Luis Herrera","nombre":"Valentina","apellido":"Cruz"}
+{"index":{"_id":29}}
+{"fecha_compra":"2026-04-23T18:15:00Z","cantidad":1,"importe":18.99,"producto_id":29,"canal_venta":"tienda_fisica","estado":"completada","total_importe":18.99,"vendedor":"Daniela Soto","nombre":"Mateo","apellido":"Ortiz"}
+{"index":{"_id":30}}
+{"fecha_compra":"2026-04-24T19:15:00Z","cantidad":4,"importe":189.99,"producto_id":30,"canal_venta":"telefono","estado":"completada","total_importe":759.96,"vendedor":"Ricardo Peña","nombre":"Isabella","apellido":"Morales"}
+{"index":{"_id":31}}
+{"fecha_compra":"2026-04-15T10:45:00Z","cantidad":1,"importe":28.5,"producto_id":31,"canal_venta":"tienda_en_linea","estado":"completada","total_importe":28.5,"vendedor":"Laura Méndez","nombre":"Emilio","apellido":"Navarro"}
+{"index":{"_id":32}}
+{"fecha_compra":"2026-04-16T11:45:00Z","cantidad":2,"importe":17.49,"producto_id":32,"canal_venta":"tienda_fisica","estado":"enviada","total_importe":34.98,"vendedor":"Diego Torres","nombre":"Gabriela","apellido":"Mendoza"}
+{"index":{"_id":33}}
+{"fecha_compra":"2026-04-17T12:45:00Z","cantidad":3,"importe":11.99,"producto_id":33,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":35.97,"vendedor":"Ana Castillo","nombre":"Diego","apellido":"Torres"}
+{"index":{"_id":34}}
+{"fecha_compra":"2026-04-18T13:45:00Z","cantidad":1,"importe":33.99,"producto_id":34,"canal_venta":"tienda_en_linea","estado":"pendiente","total_importe":33.99,"vendedor":"Miguel Rojas","nombre":"Lucía","apellido":"Castillo"}
+{"index":{"_id":35}}
+{"fecha_compra":"2026-04-19T14:45:00Z","cantidad":2,"importe":79.99,"producto_id":35,"canal_venta":"telefono","estado":"completada","total_importe":159.98,"vendedor":"Elena Vargas","nombre":"Alejandro","apellido":"Rojas"}
+{"index":{"_id":36}}
+{"fecha_compra":"2026-04-20T15:45:00Z","cantidad":1,"importe":25.75,"producto_id":36,"canal_venta":"tienda_fisica","estado":"completada","total_importe":25.75,"vendedor":"Pablo Navarro","nombre":"Camila","apellido":"Vargas"}
+{"index":{"_id":37}}
+{"fecha_compra":"2026-04-21T16:45:00Z","cantidad":3,"importe":44.99,"producto_id":37,"canal_venta":"tienda_en_linea","estado":"en_preparacion","total_importe":134.97,"vendedor":"Camila Reyes","nombre":"Daniel","apellido":"Navarro"}
+{"index":{"_id":38}}
+{"fecha_compra":"2026-04-22T17:45:00Z","cantidad":2,"importe":21.5,"producto_id":38,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":43,"vendedor":"Luis Herrera","nombre":"Paula","apellido":"Reyes"}
+{"index":{"_id":39}}
+{"fecha_compra":"2026-04-23T18:45:00Z","cantidad":1,"importe":67.99,"producto_id":39,"canal_venta":"tienda_fisica","estado":"completada","total_importe":67.99,"vendedor":"Daniela Soto","nombre":"Fernando","apellido":"Herrera"}
+{"index":{"_id":40}}
+{"fecha_compra":"2026-04-24T19:45:00Z","cantidad":2,"importe":48.99,"producto_id":40,"canal_venta":"telefono","estado":"cancelada","total_importe":97.98,"vendedor":"Ricardo Peña","nombre":"Elena","apellido":"Soto"}
+{"index":{"_id":41}}
+{"fecha_compra":"2026-04-15T10:20:00Z","cantidad":1,"importe":31.99,"producto_id":41,"canal_venta":"tienda_en_linea","estado":"completada","total_importe":31.99,"vendedor":"Laura Méndez","nombre":"Ricardo","apellido":"Peña"}
+{"index":{"_id":42}}
+{"fecha_compra":"2026-04-16T11:20:00Z","cantidad":2,"importe":119.99,"producto_id":42,"canal_venta":"tienda_fisica","estado":"enviada","total_importe":239.98,"vendedor":"Diego Torres","nombre":"Victoria","apellido":"Méndez"}
+{"index":{"_id":43}}
+{"fecha_compra":"2026-04-17T12:20:00Z","cantidad":1,"importe":29.5,"producto_id":43,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":29.5,"vendedor":"Ana Castillo","nombre":"Carlos","apellido":"Ramírez"}
+{"index":{"_id":44}}
+{"fecha_compra":"2026-04-18T13:20:00Z","cantidad":3,"importe":46.99,"producto_id":44,"canal_venta":"tienda_en_linea","estado":"pendiente","total_importe":140.97,"vendedor":"Miguel Rojas","nombre":"María","apellido":"López"}
+{"index":{"_id":45}}
+{"fecha_compra":"2026-04-19T14:20:00Z","cantidad":2,"importe":34.99,"producto_id":45,"canal_venta":"telefono","estado":"completada","total_importe":69.98,"vendedor":"Elena Vargas","nombre":"Jorge","apellido":"Hernández"}
+{"index":{"_id":46}}
+{"fecha_compra":"2026-04-20T15:20:00Z","cantidad":1,"importe":19.5,"producto_id":46,"canal_venta":"tienda_fisica","estado":"completada","total_importe":19.5,"vendedor":"Pablo Navarro","nombre":"Sofía","apellido":"García"}
+{"index":{"_id":47}}
+{"fecha_compra":"2026-04-21T16:20:00Z","cantidad":2,"importe":37.99,"producto_id":47,"canal_venta":"tienda_en_linea","estado":"en_preparacion","total_importe":75.98,"vendedor":"Camila Reyes","nombre":"Andrés","apellido":"Flores"}
+{"index":{"_id":48}}
+{"fecha_compra":"2026-04-22T17:20:00Z","cantidad":1,"importe":23.99,"producto_id":48,"canal_venta":"mercado_en_linea","estado":"completada","total_importe":23.99,"vendedor":"Luis Herrera","nombre":"Valentina","apellido":"Cruz"}
+{"index":{"_id":49}}
+{"fecha_compra":"2026-04-23T18:20:00Z","cantidad":3,"importe":64.99,"producto_id":49,"canal_venta":"tienda_fisica","estado":"completada","total_importe":194.97,"vendedor":"Daniela Soto","nombre":"Mateo","apellido":"Ortiz"}
+{"index":{"_id":50}}
+{"fecha_compra":"2026-04-24T19:20:00Z","cantidad":2,"importe":15.99,"producto_id":50,"canal_venta":"telefono","estado":"completada","total_importe":31.98,"vendedor":"Ricardo Peña","nombre":"Isabella","apellido":"Morales"}
+
+//necesito que te armes otro docuemnto como el que hiciste pero ahora con estos campos, idpedido, unidades, precio unitario, total venta, linea de producto, codigo de producto, pais y territorio

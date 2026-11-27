@@ -1,0 +1,20 @@
+#Creacion del indice
+put /paises_test
+
+#Creacion del rol
+POST /_security/role/logstash_escritura
+{
+  "run_as": ["logstash escritura"],
+  "cluster": ["monitor"],
+  "indices": [
+    {"names": ["paises_test"],
+    "privileges": ["write"]}
+  ]
+}
+
+
+# Ejecutar los templates de logs y el templates de pedidos
+// cargar primero los archivos de access logs ejemplo: nginx-access-logs-2023-01
+// cargar los pedidos-bulk.json con nombre pedidos 01
+// crear data view con nombre Access logs, el index pattern access-logs* (deben matchear con los demas index)
+//crear la data view de pedidos (debe matchear con pedidos 01)

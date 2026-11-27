@@ -1,0 +1,56 @@
+#Busqueda full text
+GET /productos/_search
+{
+  "query": {"match": {
+    "name": {
+      "query": "glass"
+    }
+  }
+  }
+}
+
+#Busqueda full-text con error tipografico
+GET /productos/_search
+{
+  "query": {
+    "match": {
+    "name": {
+      "query": "headph0nes",
+      "fuzziness": "auto"
+    }
+  }}
+}
+
+#Busqueda full text con error tipografico en diferentes terminos
+GET /productos/_search
+{
+  "query": {"match": {
+    "name": {
+      "query": "gla5s m3al",
+      "operator": "and",
+      "fuzziness": "auto"
+    }
+  }}
+}
+
+#Busqueda full-text con error tipografico, trasposicion letras y numeros maximos
+GET /productos/_search
+{
+  "query": {"match": {
+    "name": {
+      "query": "gass",
+      "fuzziness": 1
+    }
+  }}
+}
+#Busqueda full-text con error tipografico, deshabilitar trasposiciones
+GET /productos/_search
+{
+  "query": {"match": {
+    "name": {
+      "query": "gass",
+      "fuzziness": 1,
+      "fuzzy_transpositions": "false"
+    }
+  }}
+}

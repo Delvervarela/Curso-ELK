@@ -1,0 +1,49 @@
+#Crear Histograma con intervalos de 25
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "distribucion_importe": {
+      "histogram": {
+        "field": "total_importe",
+        "interval": 25
+      }
+    }
+  }
+}
+
+#Crear histograma mostrando solo intervalos no vacios
+GET /pedidos/_search
+{
+  "size": 0,
+  "query": {
+    "range": {
+      "total_importe": {
+        "gte": 100
+      }
+    }
+  },
+  "aggs": {
+    "distribucion_importe": {
+      "histogram": {
+        "field": "total_importe",
+        "interval": 25,
+        "min_doc_count": 2
+      }
+    }
+  }
+}
+
+#Crear histogramas con fechas (agregacion mensual)
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "agregacion_pedidos_mesual": {
+      "date_histogram": {
+        "field": "fecha_compra",
+        "calendar_interval": "month"
+      }
+    }
+  }
+}

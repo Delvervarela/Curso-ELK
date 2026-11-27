@@ -1,0 +1,58 @@
+#Verificamos el mapping
+GET /productos3/_mapping
+
+#Busqueda full-text (or por defecto)
+GET /productos/_search
+{
+  "query": {"match": {
+    "name": "products who have Headphones"
+  }}
+}
+
+#Busqueda full-text con operador AND
+GET /productos3/_search
+{
+  "query": {"match": {
+    "name":{"query": "products who have headphones",
+    "operator": "and"}
+  }}
+}
+
+#Busqueda full.text con operador and
+GET /productos/_search
+{
+  "query": {
+    "match": {
+      "name": {
+        "query": "noise headphone ",
+        "operator": "and"
+      }
+    }
+  }
+}
+
+#Busqueda Full-text en multiples campos
+GET /productos/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "headphones",
+      "fields": ["name", "description"]
+    }
+  }
+}
+
+#Busqueda full text (frase)
+GET /productos/_search
+{
+  "query": {
+    "match_phrase": {
+      "name": "wireless noise"
+    }
+  }
+}
+
+GET /productos3/_search
+{
+  "query": {"match_all": {}}
+}

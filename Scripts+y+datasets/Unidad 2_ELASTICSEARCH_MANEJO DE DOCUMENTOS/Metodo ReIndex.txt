@@ -1,0 +1,129 @@
+PUT /valoraciones
+{
+    "mappings": {
+        "properties": {
+            "puntuacion": {"type": "float"},
+            "contenido": {"type": "text"},
+            "producto_id": {"type": "integer"},
+            "autor": {
+                "properties": {
+                    "nombre": {"type": "text"},
+                    "apellidos": {"type": "text"},
+                    "email": {"type": "keyword"}
+                }
+            }
+        }
+    }
+}
+
+
+# Indexar un documento cumpliendo el tipo de datos mapeado
+put /valoraciones/_doc/1
+{
+    "puntuacion": 5.0,
+    "contenido": "¡Estoy aprendiendo!",
+    "producto_id": 123,
+    "autor": {
+        "nombre": "Juan",
+        "apellidos": "Diaz",
+        "email": "jd_di@example.com"
+    }
+}
+
+# Indexar un documento cumpliendo el tipo de datos mapeado
+put /valoraciones/_doc/2
+{
+    "puntuacion": 4.0,
+    "contenido": "¡Estoy aprendiendo!",
+    "producto_id": 124,
+    "autor": {
+        "nombre": "Sara",
+        "apellidos": "Carbonelli",
+        "email": "src@example.com"
+    }
+}
+
+#ReIndexar sin cambios
+POST /_reindex
+{
+    "source": {
+        "index": "valoraciones"
+    },
+    "dest": {"index": "valoraciones_nuevo"}
+}
+
+#Eliminamos los documentos para indexarlos con  modificaciones
+POST /valoraciones_nuevo/_delete_by_query
+{
+    "query": {"match_all": {}}
+}
+
+#ReIndexar modificando producto_id a string
+POST /_reindex
+{
+    "source": {"index": "valoraciones"},
+    "dest": {"index": "valoraciones_nuevo"},
+    "script": {"source": """
+        if (ctx._source.product_id != null){
+            ctx._source.producto_id = ctx.source.producto_id.toString();
+        }
+        """
+        }
+}
+
+GET /valoraciones_nuevo/_search
+{
+    "query": {"match_all": {}}
+}
+
+#ReIndexar si se cumple una query(en este caso serian todos los match all)
+POST /_reindex
+{
+    "source": {"index": "valoraciones",
+    "query": {"match_all": { }}},
+
+    "dest": {"index": "valoraciones_nuevo"}
+}
+
+
+#ReIndexar solo si la puntuacion es positiva (>4.5)
+POST /_reindex
+{
+    "source": {"index": "valoraciones",
+    "query": {"range" : {
+        "puntuacion": {"gte": 4.5}
+    }}},
+    "dest": {"index": "valoraciones_nuevo"}
+    }
+
+#Eliminamos los documentos para indexarlos con  modificaciones
+POST /valoraciones_nuevo/_delete_by_query
+{
+    "query": {"match_all": {}}
+}
+
+#ReIndexar seleccionando solo algunos campos
+POST /_reindex
+{
+    "source": {"index": "valoraciones",
+    "_source": ["puntuacion", "autor"]},
+
+    "dest": {"index": "valoraciones_nuevo"}
+    
+}
+
+GET /valoraciones_nuevo/_search
+{
+    "query": {"match_all": {}}
+}
+
+#ReIndexar cambio nombre de campos
+POST /_reindex
+{
+    "source": {"index": "valoraciones"},
+    "dest": {"index": "valoraciones_nuevo"},
+    "script": {"source": """
+                ctx._source.descripcion = ctx._source.remove("contenido");
+                """
+                }
+}

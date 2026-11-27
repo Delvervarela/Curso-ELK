@@ -1,0 +1,25 @@
+input{
+	file{
+		path => "ruta del archivo.csv de los paises"
+		start_position => beginning
+		sincedb_path => "NULL"
+		}
+
+
+}
+
+filter {
+	CSV{
+		separator => ";"
+		columns => ["pais","Poblacion","Renta per capita", "Esperanza de vida"]
+		}
+		}
+output {
+	stdout{}
+	elasticsearch{
+		cloud_id => ZWFzdHVzMi5henVyZS5lbGFzdGljLWNsb3VkLmNvbSRlMzk0M2Y2YWJkNDg0MmMyODY2MTcxMGUwY2Q2M2JjOSQ3NGQ0MWY2MmY5YjY0ODA5OWFjMDcyYWQ0ZmY2NDRkMA==
+		user => logstash_internal
+		password => logstash
+		index =>"paises_test"	
+}
+}

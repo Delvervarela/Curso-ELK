@@ -1,0 +1,30 @@
+#Indexar docuementos con un BULK
+POST /_bulk
+{"index": {"_index": "productos", "_id": 200} }
+{"name": "Cafetera", "precio": 199, "stock": 5}
+{"create": {"_index": "productos", "_id": 201} }
+{"name": "Aspirador", "precio": 149, "stock": 14}
+{"create": {"_index": "productos", "_id": 202} }
+{"name": "Aspirador", "precio": 119, "stock": 12}
+
+#Actuaizar y eliminar documentos con BULK
+POST /_bulk
+{"update": {"_index": "productos", "_id": 201}}
+{"doc": {"precio": 129}}
+{"delete": {"_index": "productos", "_id": 200}}
+
+#Actualizar y eliminar docuemnto con BULK especificando el index
+POST /productos/_bulk
+{"update": {"_id": 201}}
+{"doc": {"precio": 129}}
+{"delete": {"_id": 202}}
+
+
+
+# Consultar masivamente os docuemntos de un index
+GET /productos/_search
+{
+    "query": {
+        "match_all": {}
+    }
+}

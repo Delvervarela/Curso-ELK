@@ -1,0 +1,31 @@
+#Limitar el tamaño de los resultados mostrados
+GET /productos3/_search
+{
+  "size": 3,
+  "query": {"match_all": {}}
+}
+
+#Filtrar los campos de retorno
+GET /productos3/_search
+{
+  "_source": ["name","stock"],
+  "query": {"match_all": {}}
+}
+
+#Filtrar los campos excluyendo un campo
+GET /productos3/_search
+{
+  "_source": {"excludes": "description"},
+  "query": {"match_all": {}}
+}
+
+#Ordenar resultados por multiples campos
+GET /productos3/_search
+{
+  "size": 10,
+  "query": {"match_all": {}},
+  "sort": [
+    {"price": "asc"},
+    {"created": "desc"}
+  ]
+}

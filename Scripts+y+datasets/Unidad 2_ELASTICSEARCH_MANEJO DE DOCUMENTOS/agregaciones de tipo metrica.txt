@@ -1,0 +1,80 @@
+GET /pedidos/_mapping
+
+#Obtener agregacion venta total
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "total_venta": {
+      "sum": {
+        "field": "total_importe"
+      }
+    }
+  }
+}
+
+#obtener varias estadisticas
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "total_venta": {
+      "sum": {
+        "field": "total_importe"
+      }
+    },
+    "promedio_venta": {
+      "avg": {
+        "field": "total_importe"
+      }
+    },
+    "min_venta":{
+      "min": {
+        "field": "total_importe"
+      }
+    },
+    "max_venta": {
+      "max": {
+        "field": "total_importe"
+      }
+    },
+    "contador_ventas":{
+      "value_count": {
+        "field": "total_importe"
+      }
+    }
+  }
+}
+
+#Uso de stats para estadisticas comunes
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "total_estadisticas": {
+      "stats": {
+        "field": "total_importe"
+      }
+    }
+  }
+}
+
+#Uso de stats para estadisticas comunes con query
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "total_estadisticas": {
+      "stats": {
+        "field": "total_importe"
+      }
+    }
+  },
+  "query": {
+    "range": {
+    "total_importe": {
+      "gte": 100,
+      "lte": 500
+    }
+  }}
+}

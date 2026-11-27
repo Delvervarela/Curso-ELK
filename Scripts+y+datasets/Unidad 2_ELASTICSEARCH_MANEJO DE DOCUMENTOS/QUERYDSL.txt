@@ -1,0 +1,16 @@
+#Busqueda QUERYDSL de todos los elementos
+GET /productos/_search
+{
+    "query": {"match_all": {}}
+}
+
+#Busqueda QUERYSQL por un campo
+GET /productos/_search
+{
+    "query": {"match": {
+      "tags": "electronics"
+    }}
+}
+
+#Alternativa - Busqueda URI
+GET /productos/_search?q=tags:mobile

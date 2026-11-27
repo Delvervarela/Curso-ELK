@@ -1,0 +1,118 @@
+# TERM LEVEL
+
+#Busqueda por un termino
+GET /productos/_search
+{
+    "query": {
+        "term": {
+          "name": "headphones"
+        }
+    }
+}
+#Busqueda por multiples terminos
+GET /productos/_search
+{
+    "query": {
+        "terms": {
+          "name": ["headphones", "bread", "motorcycle", "pan", "computer", "shoes"]
+        }
+    }
+}
+
+#Busqueda por multiples IDS
+GET /productos/_search
+{
+    "query": {
+        "ids": {
+            "values": [67, 15, 99, 56, 87]
+        }
+    }
+}
+
+
+#Busqueda por rango de valores
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "stock": {
+            "gte": 25,
+            "lte": 45
+          }
+        }
+    }
+}
+
+#Busqueda por rango de fechas
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "2026-01-26T12:00:00Z",
+            "lte": "2026-01-31T12:00:00Z"
+          }
+        }
+    }
+}
+#Busqueda por rango de fechas con formato personalizado
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "01-04-2026",
+            "lte": "26-04-2026",
+            "format": "dd-MM-yyyy"
+          }
+        }
+    }
+}
+
+#Busquedas por fechas mayor que
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "2026-03-03"
+        }
+        }
+    }
+}
+
+#Busqueda por fecha mayor que fecha de anclaje + 3 dias
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "2026-04-03||+3d"
+          }
+        }
+    }
+}
+
+#Busqueda por fecha mayor que fecha anclaje redondeada + 3 dias
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "2026-04-03||/M+3d"
+          }
+        }
+    }
+}
+
+#Busqueda por fecha mayor que fecha actual + 1 mes
+GET /productos/_search
+{
+    "query": {
+        "range": {
+          "created": {
+            "gte": "now+1M"
+          }
+        }
+    }
+}

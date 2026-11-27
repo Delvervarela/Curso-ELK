@@ -1,0 +1,66 @@
+#Crear agregacion de rangos de valores
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "distribucion_importe": {
+      "range": {
+        "field": "total_importe",
+        "ranges": [
+          {"to": 25},{"from": 25, "to": 50},
+          {"from": 50}
+        ]
+      }
+    }
+  }
+}
+
+#Crear agregaciones de rangos de fecha basica
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "rangos_compra": {
+      "date_range": {
+        "field": "fecha_compra",
+        "ranges": [
+          {"from": "2026-04-01", "to": "2026-05-20"},
+          {"from": "2026-04-01", "to": "2026-04-20"}
+        ]
+      }
+    }
+  }
+}
+
+
+#Crear agregaciones por rangos de fechas avanzada
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "rangos_compra": {
+      "date_range": {
+        "field": "fecha_compra",
+        "format": "yyyy-MM-dd",
+        "keyed": true,
+        "ranges": [
+          {"from": "2026-04-01", "to": "2026-04-01||+6M", "key": "primer_semestre"},
+          {"from": "2016-01-01||+6M", "to": "2026-01-01||+1y", "key": "segundo_semestre"}
+        ]
+      },
+      "aggs": {
+        "bucket_stats": {
+          "stats": {
+            "field": "total_importe"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /pedidos/_search
+{
+  "size": 50,
+  "query": {"match_all": {}}
+}

@@ -1,0 +1,81 @@
+#Añadir mapeo a un index explicitamente
+PUT /valoraciones
+{
+    "mappings": {
+        "properties": {
+            "puntuacion": {"type": "float"},
+            "contenido": {"type": "text"},
+            "producto_id": {"type": "integer"},
+            "autor": {
+                "properties": {
+                    "nombre": {"type": "text"},
+                    "apellidos": {"type": "text"},
+                    "email": {"type": "keyword"}
+                }
+            }
+        }
+    }
+}
+
+# Indexar un documuento cumpliendo el tipo de datos mapeado
+put /valoraciones/_doc/1
+{
+    "puntuacion": 5.0,
+    "contenido": "¡Estoy aprendiendo!",
+    "producto_id": 123,
+    "autor": {
+        "nombre": "John",
+        "apellidos": "Doe",
+        "email": "johndoe123@example.com"
+    }
+}
+
+#Obtener el mapeo de un index
+GET /valoraciones/_mapping
+
+#Obtener el mapeo de un campo especifico
+GET /valoraciones/_mapping/field/producto_id
+
+#Obtener el mapeo de un campo array
+GET /valoraciones/_mapping/field/autor.email
+
+#Alternativa de mapeo con campos array
+PUT /valoraciones_dot
+{
+    "mappings": {
+        "properties": {
+            "puntuacion": {"type": "float"},
+            "contenido": {"type": "text"},
+            "producto_id": {"type": "integer"},
+            "autor.nombre": {"type": "text"},
+            "autor.apellidos": {"type": "text"}, 
+            "autor.email": {"type": "keyword"} 
+        }
+    }
+}
+
+#Obtener el mapeo de un index
+GET /valoraciones_dot/_mapping
+
+
+#Añadir mapeo de un nuevo campo al index
+PUT /valoraciones/_mapping
+{
+    "properties": {
+        "fecha_creacion": {
+            "type": "date"
+        }
+    }
+}
+
+
+
+
+GET /valoraciones/_search
+{
+    "query": {
+        "match_all": {}
+    }
+}
+
+POST /_reindex

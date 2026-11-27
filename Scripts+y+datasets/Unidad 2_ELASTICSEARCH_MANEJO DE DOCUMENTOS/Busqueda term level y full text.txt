@@ -1,0 +1,34 @@
+#Busqueda de todos los documentos del index
+GET /productos/_search
+{
+    "query": {"match_all": {}}
+}
+
+#Busqueda term-level (term)
+GET /productos/_search
+{
+    "query": {
+        "term": {
+          "name": "sports"
+        }
+    }
+}
+#Busqueda term-level (term) - Mayuscula
+GET /productos/_search
+{
+    "query": {
+        "term": {
+          "name": "Sports"
+        }
+    }
+}
+
+#Busqueda full-text (match)
+GET /productos/_search
+{
+    "query": {
+        "match": {
+          "name": "Sports"
+        }
+    }
+}

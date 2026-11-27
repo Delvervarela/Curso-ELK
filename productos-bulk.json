@@ -1,0 +1,204 @@
+{"index":{"_id":1}}
+{"name":"Wireless Noise-Canceling Headphones","price":129.99,"stock":35,"tags":["audio","electronics"],"description":"Over-ear headphones with active noise cancellation and a 30-hour battery.","is_active":true,"created":"2026-01-05T10:00:00Z"}
+{"index":{"_id":2}}
+{"name":"Stainless Steel Travel Mug","price":24.5,"stock":80,"tags":["kitchen","drinkware"],"description":"Insulated travel mug with a spill-resistant lid and 450 ml capacity.","is_active":true,"created":"2026-01-06T10:00:00Z"}
+{"index":{"_id":3}}
+{"name":"Trail Running Shoes","price":89.95,"stock":22,"tags":["sports","footwear"],"description":"Lightweight trail shoes with grippy rubber soles for outdoor runs.","is_active":true,"created":"2026-01-07T10:00:00Z"}
+{"index":{"_id":4}}
+{"name":"Adjustable LED Desk Lamp","price":39.99,"stock":44,"tags":["home","lighting"],"description":"Dimmable desk lamp with adjustable arm and three brightness settings.","is_active":true,"created":"2026-01-08T10:00:00Z"}
+{"index":{"_id":5}}
+{"name":"Waterproof Hiking Backpack","price":74.99,"stock":18,"tags":["outdoors","bags"],"description":"Weather-resistant 28-liter backpack with padded shoulder straps.","is_active":true,"created":"2026-01-09T10:00:00Z"}
+{"index":{"_id":6}}
+{"name":"Insulated Sports Water Bottle","price":19.99,"stock":65,"tags":["sports","drinkware"],"description":"Double-wall stainless steel bottle that keeps drinks cold for hours.","is_active":true,"created":"2026-01-10T10:00:00Z"}
+{"index":{"_id":7}}
+{"name":"Portable Bluetooth Speaker","price":54.95,"stock":31,"tags":["audio","electronics"],"description":"Compact wireless speaker with waterproof housing and rich stereo sound.","is_active":true,"created":"2026-01-11T10:00:00Z"}
+{"index":{"_id":8}}
+{"name":"Hardcover Grid Notebook","price":8.99,"stock":120,"tags":["office","stationery"],"description":"A5 notebook with 160 grid pages and a durable hardcover.","is_active":true,"created":"2026-01-12T10:00:00Z"}
+{"index":{"_id":9}}
+{"name":"Mechanical Gaming Keyboard","price":99.99,"stock":16,"tags":["gaming","electronics"],"description":"Tenkeyless keyboard with tactile switches and customizable backlighting.","is_active":true,"created":"2026-01-13T10:00:00Z"}
+{"index":{"_id":10}}
+{"name":"Non-Slip Yoga Mat","price":29.95,"stock":53,"tags":["fitness","sports"],"description":"Comfortable exercise mat with a textured surface for extra grip.","is_active":true,"created":"2026-01-14T10:00:00Z"}
+{"index":{"_id":11}}
+{"name":"Ceramic Pour-Over Coffee Dripper","price":16.5,"stock":27,"tags":["kitchen","coffee"],"description":"Reusable ceramic coffee dripper designed for a smooth manual brew.","is_active":true,"created":"2026-01-15T10:00:00Z"}
+{"index":{"_id":12}}
+{"name":"Ergonomic Mesh Office Chair","price":219.99,"stock":9,"tags":["office","furniture"],"description":"Adjustable office chair with breathable mesh back and lumbar support.","is_active":true,"created":"2026-01-16T10:00:00Z"}
+{"index":{"_id":13}}
+{"name":"Compact USB-C Power Bank","price":34.99,"stock":47,"tags":["electronics","mobile"],"description":"10,000 mAh portable charger with USB-C fast charging output.","is_active":true,"created":"2026-01-17T10:00:00Z"}
+{"index":{"_id":14}}
+{"name":"Polarized Aviator Sunglasses","price":45,"stock":28,"tags":["fashion","accessories"],"description":"Lightweight aviator sunglasses with polarized lenses and UV protection.","is_active":true,"created":"2026-01-18T10:00:00Z"}
+{"index":{"_id":15}}
+{"name":"Cast Iron Skillet","price":32.75,"stock":34,"tags":["kitchen","cookware"],"description":"Pre-seasoned 10-inch cast iron skillet for stovetop and oven cooking.","is_active":true,"created":"2026-01-19T10:00:00Z"}
+{"index":{"_id":16}}
+{"name":"Smart Fitness Tracker","price":69.99,"stock":21,"tags":["fitness","wearables"],"description":"Activity tracker with heart rate monitoring and sleep reports.","is_active":true,"created":"2026-01-20T10:00:00Z"}
+{"index":{"_id":17}}
+{"name":"Classic Leather Wallet","price":38.5,"stock":42,"tags":["fashion","accessories"],"description":"Slim genuine leather wallet with card slots and a bill compartment.","is_active":true,"created":"2026-01-21T10:00:00Z"}
+{"index":{"_id":18}}
+{"name":"Rechargeable Electric Toothbrush","price":49.99,"stock":25,"tags":["personal-care","electronics"],"description":"Rechargeable toothbrush with a two-minute timer and travel case.","is_active":true,"created":"2026-01-22T10:00:00Z"}
+{"index":{"_id":19}}
+{"name":"Bamboo Cutting Board Set","price":27.99,"stock":38,"tags":["kitchen","cookware"],"description":"Set of three bamboo cutting boards in different practical sizes.","is_active":true,"created":"2026-01-23T10:00:00Z"}
+{"index":{"_id":20}}
+{"name":"Mini Indoor Herb Garden Kit","price":31.95,"stock":14,"tags":["garden","home"],"description":"Countertop planter kit with pots, seed packets, and plant markers.","is_active":true,"created":"2026-01-24T10:00:00Z"}
+{"index":{"_id":21}}
+{"name":"Foldable Laptop Stand","price":26.99,"stock":57,"tags":["office","computer-accessories"],"description":"Portable aluminum stand with adjustable height and ventilation slots.","is_active":true,"created":"2026-01-25T10:00:00Z"}
+{"index":{"_id":22}}
+{"name":"Automatic Pet Water Fountain","price":42.99,"stock":19,"tags":["pets","home"],"description":"Quiet circulating water fountain with a replaceable charcoal filter.","is_active":true,"created":"2026-01-26T10:00:00Z"}
+{"index":{"_id":23}}
+{"name":"Lightweight Camping Tent","price":159.99,"stock":11,"tags":["outdoors","camping"],"description":"Two-person tent with a rainfly and quick-pitch pole system.","is_active":true,"created":"2026-01-27T10:00:00Z"}
+{"index":{"_id":24}}
+{"name":"Noise-Isolating USB Microphone","price":84.5,"stock":17,"tags":["audio","computer-accessories"],"description":"Desktop USB microphone with a cardioid pickup pattern for clear voice capture.","is_active":true,"created":"2026-01-28T10:00:00Z"}
+{"index":{"_id":25}}
+{"name":"Cotton Bath Towel Set","price":36.99,"stock":46,"tags":["bath","home"],"description":"Four-piece cotton towel set with soft, absorbent fabric.","is_active":true,"created":"2026-01-29T10:00:00Z"}
+{"index":{"_id":26}}
+{"name":"Stainless Steel Chef Knife","price":52.99,"stock":23,"tags":["kitchen","cookware"],"description":"Eight-inch chef knife with a balanced handle and sharp stainless blade.","is_active":true,"created":"2026-01-30T10:00:00Z"}
+{"index":{"_id":27}}
+{"name":"Smart Wi-Fi Light Bulb","price":14.99,"stock":88,"tags":["smart-home","lighting"],"description":"Color-changing LED bulb controllable through a mobile app.","is_active":true,"created":"2026-01-31T10:00:00Z"}
+{"index":{"_id":28}}
+{"name":"Travel Packing Cube Set","price":22.95,"stock":39,"tags":["travel","organization"],"description":"Six lightweight packing cubes to organize clothing inside luggage.","is_active":true,"created":"2026-02-01T10:00:00Z"}
+{"index":{"_id":29}}
+{"name":"Resistance Band Workout Set","price":18.99,"stock":64,"tags":["fitness","sports"],"description":"Five resistance bands with varied strengths and a carry pouch.","is_active":true,"created":"2026-02-02T10:00:00Z"}
+{"index":{"_id":30}}
+{"name":"Classic Vinyl Record Player","price":189.99,"stock":7,"tags":["audio","music"],"description":"Belt-driven turntable with built-in speakers and three playback speeds.","is_active":true,"created":"2026-02-03T10:00:00Z"}
+{"index":{"_id":31}}
+{"name":"Minimalist Wall Clock","price":28.5,"stock":26,"tags":["home","decor"],"description":"Silent quartz wall clock with a clean face and wooden frame.","is_active":true,"created":"2026-02-04T10:00:00Z"}
+{"index":{"_id":32}}
+{"name":"Reusable Silicone Food Bags","price":17.49,"stock":71,"tags":["kitchen","storage"],"description":"Set of four reusable food storage bags made from food-grade silicone.","is_active":true,"created":"2026-02-05T10:00:00Z"}
+{"index":{"_id":33}}
+{"name":"Waterproof Phone Pouch","price":11.99,"stock":93,"tags":["mobile","travel"],"description":"Touch-compatible waterproof pouch for phones during water activities.","is_active":true,"created":"2026-02-06T10:00:00Z"}
+{"index":{"_id":34}}
+{"name":"Polar Fleece Throw Blanket","price":33.99,"stock":32,"tags":["home","bedding"],"description":"Soft fleece blanket sized for a sofa or a single bed.","is_active":true,"created":"2026-02-07T10:00:00Z"}
+{"index":{"_id":35}}
+{"name":"Cordless Handheld Vacuum","price":79.99,"stock":13,"tags":["home","cleaning"],"description":"Compact rechargeable vacuum with a washable filter and crevice tool.","is_active":true,"created":"2026-02-08T10:00:00Z"}
+{"index":{"_id":36}}
+{"name":"Drawing Pencil Art Set","price":25.75,"stock":41,"tags":["art","stationery"],"description":"Sketching set with graphite pencils, charcoal, erasers, and a sharpener.","is_active":true,"created":"2026-02-09T10:00:00Z"}
+{"index":{"_id":37}}
+{"name":"Kids' Building Block Set","price":44.99,"stock":20,"tags":["toys","educational"],"description":"Creative construction block set with colorful pieces for ages six and up.","is_active":true,"created":"2026-02-10T10:00:00Z"}
+{"index":{"_id":38}}
+{"name":"Garden Pruning Shears","price":21.5,"stock":29,"tags":["garden","tools"],"description":"Bypass pruning shears with a locking safety catch and ergonomic grip.","is_active":true,"created":"2026-02-11T10:00:00Z"}
+{"index":{"_id":39}}
+{"name":"Compact Binoculars","price":67.99,"stock":12,"tags":["outdoors","optics"],"description":"Lightweight binoculars with 10x magnification for hiking and wildlife viewing.","is_active":true,"created":"2026-02-12T10:00:00Z"}
+{"index":{"_id":40}}
+{"name":"Porcelain Dinner Plate Set","price":48.99,"stock":24,"tags":["kitchen","dining"],"description":"Set of six durable porcelain dinner plates with a simple glazed finish.","is_active":true,"created":"2026-02-13T10:00:00Z"}
+{"index":{"_id":41}}
+{"name":"Wireless Ergonomic Mouse","price":31.99,"stock":36,"tags":["office","computer-accessories"],"description":"Wireless mouse with adjustable sensitivity and a sculpted palm rest.","is_active":true,"created":"2026-02-14T10:00:00Z"}
+{"index":{"_id":42}}
+{"name":"Portable Photo Printer","price":119.99,"stock":8,"tags":["photography","electronics"],"description":"Pocket-sized printer that produces full-color prints from a smartphone.","is_active":true,"created":"2026-02-15T10:00:00Z"}
+{"index":{"_id":43}}
+{"name":"Merino Wool Beanie","price":29.5,"stock":33,"tags":["fashion","clothing"],"description":"Warm knit beanie made from soft merino wool for cold-weather wear.","is_active":true,"created":"2026-02-16T10:00:00Z"}
+{"index":{"_id":44}}
+{"name":"Ceramic Essential Oil Diffuser","price":46.99,"stock":15,"tags":["home","wellness"],"description":"Ultrasonic diffuser with timer settings and a soft ambient light.","is_active":true,"created":"2026-02-17T10:00:00Z"}
+{"index":{"_id":45}}
+{"name":"Double-Wall Glass Tea Set","price":34.99,"stock":18,"tags":["kitchen","drinkware"],"description":"Two clear insulated glasses designed for serving hot or iced tea.","is_active":true,"created":"2026-02-18T10:00:00Z"}
+{"index":{"_id":46}}
+{"name":"Digital Kitchen Scale","price":19.5,"stock":49,"tags":["kitchen","appliances"],"description":"Precision digital scale with a clear display and a tare function.","is_active":true,"created":"2026-02-19T10:00:00Z"}
+{"index":{"_id":47}}
+{"name":"Electric Milk Frother","price":37.99,"stock":21,"tags":["kitchen","coffee"],"description":"Handheld rechargeable frother for preparing foamy milk and drinks.","is_active":true,"created":"2026-02-20T10:00:00Z"}
+{"index":{"_id":48}}
+{"name":"Bicycle Front Light","price":23.99,"stock":37,"tags":["cycling","sports"],"description":"USB-rechargeable bicycle light with multiple beam and flash modes.","is_active":true,"created":"2026-02-21T10:00:00Z"}
+{"index":{"_id":49}}
+{"name":"Protective Cycling Helmet","price":64.99,"stock":10,"tags":["cycling","safety"],"description":"Lightweight bike helmet with adjustable fit and ventilation channels.","is_active":true,"created":"2026-02-22T10:00:00Z"}
+{"index":{"_id":50}}
+{"name":"Inflatable Camping Pillow","price":15.99,"stock":55,"tags":["outdoors","camping"],"description":"Compact inflatable pillow with a soft cover for overnight trips.","is_active":true,"created":"2026-02-23T10:00:00Z"}
+{"index":{"_id":51}}
+{"name":"Watercolor Paint Palette","price":28.99,"stock":19,"tags":["art","painting"],"description":"Twenty-four watercolor colors in a portable case with mixing wells.","is_active":true,"created":"2026-02-24T10:00:00Z"}
+{"index":{"_id":52}}
+{"name":"Acoustic Guitar Capo","price":12.5,"stock":62,"tags":["music","accessories"],"description":"Spring-loaded guitar capo with padded contact points and a durable frame.","is_active":true,"created":"2026-02-25T10:00:00Z"}
+{"index":{"_id":53}}
+{"name":"Adjustable Dumbbell Pair","price":149.99,"stock":6,"tags":["fitness","strength-training"],"description":"Space-saving adjustable dumbbells with secure weight plates.","is_active":true,"created":"2026-02-26T10:00:00Z"}
+{"index":{"_id":54}}
+{"name":"Foam Roller for Recovery","price":26.5,"stock":30,"tags":["fitness","recovery"],"description":"Textured foam roller for post-workout stretching and muscle recovery.","is_active":true,"created":"2026-02-27T10:00:00Z"}
+{"index":{"_id":55}}
+{"name":"Glass Meal Prep Containers","price":41.99,"stock":26,"tags":["kitchen","storage"],"description":"Set of five glass food containers with snap-lock lids.","is_active":true,"created":"2026-02-28T10:00:00Z"}
+{"index":{"_id":56}}
+{"name":"Smart Indoor Thermometer","price":32.99,"stock":17,"tags":["smart-home","sensors"],"description":"Connected thermometer that tracks indoor temperature and humidity.","is_active":true,"created":"2026-03-01T10:00:00Z"}
+{"index":{"_id":57}}
+{"name":"Solar-Powered Garden Lights","price":39.95,"stock":28,"tags":["garden","lighting"],"description":"Set of six outdoor pathway lights with automatic dusk activation.","is_active":true,"created":"2026-03-02T10:00:00Z"}
+{"index":{"_id":58}}
+{"name":"Woven Laundry Basket","price":35.99,"stock":14,"tags":["home","organization"],"description":"Large woven laundry basket with sturdy handles and a removable liner.","is_active":true,"created":"2026-03-03T10:00:00Z"}
+{"index":{"_id":59}}
+{"name":"Stainless Steel Measuring Cups","price":18.75,"stock":43,"tags":["kitchen","baking"],"description":"Four-piece measuring cup set with engraved measurement markings.","is_active":true,"created":"2026-03-04T10:00:00Z"}
+{"index":{"_id":60}}
+{"name":"Air Purifier Replacement Filter","price":29.99,"stock":52,"tags":["home","air-quality"],"description":"Multi-layer replacement filter for compatible compact air purifiers.","is_active":true,"created":"2026-03-05T10:00:00Z"}
+{"index":{"_id":61}}
+{"name":"Digital Drawing Tablet","price":89.99,"stock":11,"tags":["art","electronics"],"description":"Pressure-sensitive drawing tablet with a battery-free stylus.","is_active":true,"created":"2026-03-06T10:00:00Z"}
+{"index":{"_id":62}}
+{"name":"Recycled Canvas Tote Bag","price":16.99,"stock":76,"tags":["fashion","bags"],"description":"Reusable tote bag made from recycled canvas with reinforced handles.","is_active":true,"created":"2026-03-07T10:00:00Z"}
+{"index":{"_id":63}}
+{"name":"Leather-Bound Journal","price":27.5,"stock":23,"tags":["office","stationery"],"description":"Lined journal with a soft leather cover and a ribbon bookmark.","is_active":true,"created":"2026-03-08T10:00:00Z"}
+{"index":{"_id":64}}
+{"name":"Compact First Aid Kit","price":21.99,"stock":40,"tags":["outdoors","safety"],"description":"Portable first aid kit with essential supplies for travel and day hikes.","is_active":true,"created":"2026-03-09T10:00:00Z"}
+{"index":{"_id":65}}
+{"name":"Stainless Steel Dog Bowl","price":14.5,"stock":58,"tags":["pets","feeding"],"description":"Non-slip stainless steel pet bowl with a removable rubber base.","is_active":true,"created":"2026-03-10T10:00:00Z"}
+{"index":{"_id":66}}
+{"name":"Cat Scratching Post","price":49.99,"stock":13,"tags":["pets","furniture"],"description":"Tall sisal scratching post with a stable base and hanging toy.","is_active":true,"created":"2026-03-11T10:00:00Z"}
+{"index":{"_id":67}}
+{"name":"Automatic Pet Feeder","price":89.5,"stock":9,"tags":["pets","smart-home"],"description":"Programmable feeder that dispenses scheduled portions of dry pet food.","is_active":true,"created":"2026-03-12T10:00:00Z"}
+{"index":{"_id":68}}
+{"name":"Folding Picnic Blanket","price":32.99,"stock":25,"tags":["outdoors","travel"],"description":"Water-resistant picnic blanket that folds into a compact carry case.","is_active":true,"created":"2026-03-13T10:00:00Z"}
+{"index":{"_id":69}}
+{"name":"Enamel Camping Cookware Set","price":57.99,"stock":7,"tags":["outdoors","camping"],"description":"Lightweight cookware set with pots, cups, and nesting storage.","is_active":true,"created":"2026-03-14T10:00:00Z"}
+{"index":{"_id":70}}
+{"name":"Rechargeable Hand Warmer","price":24.99,"stock":31,"tags":["outdoors","winter"],"description":"Pocket-sized rechargeable hand warmer with adjustable heat levels.","is_active":true,"created":"2026-03-15T10:00:00Z"}
+{"index":{"_id":71}}
+{"name":"Compact Bin Organizer","price":20.99,"stock":47,"tags":["home","organization"],"description":"Stackable storage bins for organizing small household items.","is_active":true,"created":"2026-03-16T10:00:00Z"}
+{"index":{"_id":72}}
+{"name":"Linen Cushion Cover","price":18.99,"stock":34,"tags":["home","decor"],"description":"Textured linen cushion cover with a hidden zipper closure.","is_active":true,"created":"2026-03-17T10:00:00Z"}
+{"index":{"_id":73}}
+{"name":"Blackout Window Curtains","price":58.99,"stock":12,"tags":["home","bedding"],"description":"Pair of thermal blackout curtains designed to reduce incoming light.","is_active":true,"created":"2026-03-18T10:00:00Z"}
+{"index":{"_id":74}}
+{"name":"Electric Water Kettle","price":43.95,"stock":16,"tags":["kitchen","appliances"],"description":"Fast-boiling electric kettle with automatic shutoff and a removable filter.","is_active":true,"created":"2026-03-19T10:00:00Z"}
+{"index":{"_id":75}}
+{"name":"French Press Coffee Maker","price":29.99,"stock":29,"tags":["kitchen","coffee"],"description":"Glass French press with a stainless steel plunger and 1-liter capacity.","is_active":true,"created":"2026-03-20T10:00:00Z"}
+{"index":{"_id":76}}
+{"name":"Espresso Tamper Tool","price":22.5,"stock":18,"tags":["kitchen","coffee"],"description":"Flat-base espresso tamper with a comfortable weighted handle.","is_active":true,"created":"2026-03-21T10:00:00Z"}
+{"index":{"_id":77}}
+{"name":"Reusable Stainless Steel Straws","price":9.99,"stock":105,"tags":["kitchen","drinkware"],"description":"Set of eight reusable drinking straws with a cleaning brush and case.","is_active":true,"created":"2026-03-22T10:00:00Z"}
+{"index":{"_id":78}}
+{"name":"Compact Toaster Oven","price":109.99,"stock":5,"tags":["kitchen","appliances"],"description":"Countertop toaster oven with bake, broil, and toast cooking modes.","is_active":true,"created":"2026-03-23T10:00:00Z"}
+{"index":{"_id":79}}
+{"name":"Silicone Baking Mat Set","price":14.99,"stock":66,"tags":["kitchen","baking"],"description":"Two reusable non-stick baking mats for standard baking sheets.","is_active":true,"created":"2026-03-24T10:00:00Z"}
+{"index":{"_id":80}}
+{"name":"Hand-Crank Pasta Maker","price":74.5,"stock":8,"tags":["kitchen","cookware"],"description":"Manual pasta machine with adjustable thickness settings and cutter attachment.","is_active":true,"created":"2026-03-25T10:00:00Z"}
+{"index":{"_id":81}}
+{"name":"4K Streaming Media Player","price":59.99,"stock":20,"tags":["electronics","entertainment"],"description":"Streaming device with 4K video support and voice remote control.","is_active":true,"created":"2026-03-26T10:00:00Z"}
+{"index":{"_id":82}}
+{"name":"Dual-Port USB-C Wall Charger","price":28.99,"stock":73,"tags":["electronics","mobile"],"description":"Compact wall charger with two USB-C ports for compatible devices.","is_active":true,"created":"2026-03-27T10:00:00Z"}
+{"index":{"_id":83}}
+{"name":"Braided USB-C Charging Cable","price":13.49,"stock":91,"tags":["electronics","mobile"],"description":"Durable two-meter USB-C cable with a reinforced braided exterior.","is_active":true,"created":"2026-03-28T10:00:00Z"}
+{"index":{"_id":84}}
+{"name":"Portable External SSD","price":139.99,"stock":12,"tags":["electronics","storage"],"description":"Compact 1 TB solid-state drive with a rugged aluminum enclosure.","is_active":true,"created":"2026-03-29T10:00:00Z"}
+{"index":{"_id":85}}
+{"name":"1080p Webcam with Privacy Cover","price":47.99,"stock":24,"tags":["electronics","computer-accessories"],"description":"Full HD webcam with a built-in privacy shutter and stereo microphones.","is_active":true,"created":"2026-03-30T10:00:00Z"}
+{"index":{"_id":86}}
+{"name":"Dual Monitor Desk Mount","price":68.99,"stock":10,"tags":["office","computer-accessories"],"description":"Adjustable desk mount for two monitors with cable management clips.","is_active":true,"created":"2026-03-31T10:00:00Z"}
+{"index":{"_id":87}}
+{"name":"Noise-Reducing Earplugs","price":17.99,"stock":60,"tags":["travel","personal-care"],"description":"Reusable silicone earplugs with multiple sizes and a storage case.","is_active":true,"created":"2026-04-01T10:00:00Z"}
+{"index":{"_id":88}}
+{"name":"Carry-On Spinner Suitcase","price":179.99,"stock":6,"tags":["travel","luggage"],"description":"Lightweight carry-on suitcase with four spinner wheels and a telescopic handle.","is_active":true,"created":"2026-04-02T10:00:00Z"}
+{"index":{"_id":89}}
+{"name":"Travel Neck Pillow","price":25.99,"stock":37,"tags":["travel","comfort"],"description":"Memory foam neck pillow with a washable cover and adjustable clasp.","is_active":true,"created":"2026-04-03T10:00:00Z"}
+{"index":{"_id":90}}
+{"name":"Compact Umbrella with Wind Vent","price":21.99,"stock":44,"tags":["travel","accessories"],"description":"Foldable umbrella with a wind-resistant canopy and automatic open button.","is_active":true,"created":"2026-04-04T10:00:00Z"}
+{"index":{"_id":91}}
+{"name":"Waterproof Hiking Socks","price":19.5,"stock":27,"tags":["outdoors","clothing"],"description":"Breathable waterproof socks designed for wet-weather hiking.","is_active":true,"created":"2026-04-05T10:00:00Z"}
+{"index":{"_id":92}}
+{"name":"Trekking Pole Pair","price":54.99,"stock":15,"tags":["outdoors","hiking"],"description":"Adjustable aluminum trekking poles with cork-style grips and wrist straps.","is_active":true,"created":"2026-04-06T10:00:00Z"}
+{"index":{"_id":93}}
+{"name":"Compact Camp Lantern","price":33.99,"stock":22,"tags":["outdoors","camping"],"description":"Rechargeable LED lantern with dimmable brightness and a hanging hook.","is_active":true,"created":"2026-04-07T10:00:00Z"}
+{"index":{"_id":94}}
+{"name":"Portable Folding Camp Chair","price":46.99,"stock":17,"tags":["outdoors","camping"],"description":"Lightweight folding chair with a durable frame and a built-in cup holder.","is_active":true,"created":"2026-04-08T10:00:00Z"}
+{"index":{"_id":95}}
+{"name":"Compact Fishing Tackle Box","price":23.5,"stock":30,"tags":["outdoors","fishing"],"description":"Multi-compartment tackle box for organizing hooks, lures, and small gear.","is_active":true,"created":"2026-04-09T10:00:00Z"}
+{"index":{"_id":96}}
+{"name":"Beginner's Soldering Iron Kit","price":39.99,"stock":13,"tags":["tools","electronics"],"description":"Temperature-adjustable soldering kit with stand, tips, and basic accessories.","is_active":true,"created":"2026-04-10T10:00:00Z"}
+{"index":{"_id":97}}
+{"name":"Precision Screwdriver Set","price":18.5,"stock":48,"tags":["tools","repair"],"description":"Magnetic precision screwdriver set for small electronics and household repairs.","is_active":true,"created":"2026-04-11T10:00:00Z"}
+{"index":{"_id":98}}
+{"name":"Digital Tire Pressure Gauge","price":16.99,"stock":35,"tags":["automotive","tools"],"description":"Handheld digital gauge with a backlit display for checking tire pressure.","is_active":true,"created":"2026-04-12T10:00:00Z"}
+{"index":{"_id":99}}
+{"name":"Car Phone Mount with Wireless Charging","price":42.99,"stock":19,"tags":["automotive","mobile"],"description":"Dashboard phone mount with an adjustable arm and wireless charging pad.","is_active":true,"created":"2026-04-13T10:00:00Z"}
+{"index":{"_id":100}}
+{"name":"Microfiber Car Cleaning Kit","price":27.99,"stock":41,"tags":["automotive","cleaning"],"description":"Vehicle cleaning kit with microfiber towels, wash mitt, and detailing brushes.","is_active":true,"created":"2026-04-14T10:00:00Z"}
+
+
+
+// Necesito que crees otros docuemnto similar pero ahora con estos detalles. fecha de compra, cantidad, importe, producto_id, canal_venta, estado, total importe, vendedor, nombre, apellido. Este con los datos en español porfavor

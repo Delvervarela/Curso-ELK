@@ -1,0 +1,28 @@
+#Indexar un documento con id=100
+PUT /productos/_doc/100
+{
+    "nombre": "pan",
+    "precio": 2,
+    "stock": 20
+}
+
+GET /productos/_doc/100
+
+POST /productos/_update/100
+{
+    "doc": {
+        "stock": 10
+    }
+}
+
+#Actualizar un docuemento por id especificando PRIMARY_TERM Y SEQ_NO
+POST /productos/_update/100?if_primary_term=1&if_seq_no=9
+{
+    "doc": {
+        "stock": 14
+    }
+}
+
+GET /productos/_doc/100
+
+

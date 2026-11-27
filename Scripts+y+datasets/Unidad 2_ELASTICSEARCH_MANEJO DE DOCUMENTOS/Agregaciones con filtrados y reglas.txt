@@ -1,0 +1,60 @@
+#Crear agregacion con un filtrado previo
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "valor_bajo": {
+      "filter": {
+        "range": {
+          "total_importe": {
+            "lte": 50
+          }
+        }
+      },
+      "aggs": {
+        "promedio_importe": {
+          "avg": {
+            "field": "total_importe"
+        }
+      }
+    }
+  }
+}
+}
+
+GET /pedidos/_search
+{
+  "size": 20,
+  "query": {"match_all": {}}
+}
+
+#Crear buckets personalizados en base a filtrados
+GET /pedidos/_search
+{
+  "size": 0,
+  "aggs": {
+    "mi_filtro": {
+      "filters": {
+        "filters": {
+          "PENDIENTE":{
+            "match": {
+              "estado": "pendiente"
+            }
+          },
+          "CONFIRMADO":{
+            "match": {
+              "estado": "completada"
+            }
+          }
+        }
+      },
+      "aggs": {
+        "promedio_importe": {
+          "avg": {
+            "field": "total_importe"
+          }
+        }
+      }
+    }
+  }
+}

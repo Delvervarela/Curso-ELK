@@ -1,0 +1,88 @@
+#Mapear relaciones multinivel
+PUT /empresa
+{
+  "mappings": {
+    "properties": {
+      "campo_combinacion": {
+        "type": "join",
+        "relations":{
+         "empresas": ["departamentos", "provedores"],
+         "departamentos": "empleados"}
+      }
+  }
+  }
+}
+
+#Añadir empresa
+PUT /empresa/_doc/1
+{
+  "nombre": "Mi empresa SL",
+  "campo_combinacion": "empresas"
+}
+
+#Añadir departamento a empresa
+put /empresa/_doc/2?routing=1
+{
+  "nombre": "Tecnologia",
+  "campo_combinacion": {
+    "name": "departamentos",
+    "parent": 1
+  }
+}
+
+#Añadir empleado a departamento (el routing es a la empresa)
+PUT /empresa/_doc/3?routing=1
+{
+  "nombre": "Ivan",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 2
+  }
+}
+
+#Añadir mas datos de test
+PUT /empresa/_doc/4
+{
+  "nombre": "Otra empresa SL",
+  "campo_combinacion": "empresas"
+}
+
+put /empresa/_doc/5?routing=4
+{
+  "nombre": "Marketing",
+  "campo_combinacion": {
+    "name": "departamentos",
+    "parent": 4
+  }
+}
+
+
+PUT /empresa/_doc/6?routing=4
+{
+  "nombre": "Maria",
+  "campo_combinacion": {
+    "name": "empleados",
+    "parent": 4
+  }
+}
+
+
+#Buscar empresas que tengan empleados con nombres especificos
+GET /empresa/_search
+{
+  "query": {
+    "has_child": {
+      "type": "departamentos",
+      "query": {
+        "has_child": {
+          "type": "empleados",
+          "query": {
+            "term": {
+              "nombre.keyword": "Ivan"
+            }
+          }
+        }
+      }
+    }
+  }
+}

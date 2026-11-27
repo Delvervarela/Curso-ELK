@@ -1,0 +1,40 @@
+PUT /productos/_doc/100
+{
+    "nombre": "pan",
+    "precio": 2,
+    "stock": 20
+}
+
+PUT /productos/_doc/101
+{
+    "nombre": "mermelada",
+    "precio": 2,
+    "stock": 20
+}
+
+# Consultar masivamente documentos de un index
+GET /productos/_search
+{
+    "query": {
+        "match_all": {}
+    }
+}
+
+#Actualizar masivamente documentos que se encuentran en el indice
+POST /productos/_update_by_query
+{
+    "script": {
+      "source": "ctx._source.stock--"
+    },
+    "query": {
+        "match_all": {}
+    }
+}
+
+#Eliminar masivamente documentos de un indice
+POST /productos/_delete_by_query
+{
+    "query": {
+        "match_all": {}
+    }
+}

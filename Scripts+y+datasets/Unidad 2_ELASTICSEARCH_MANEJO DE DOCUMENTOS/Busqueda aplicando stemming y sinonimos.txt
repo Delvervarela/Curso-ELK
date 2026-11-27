@@ -1,0 +1,66 @@
+#Definir filtro personalizado stemming y sinonimos
+PUT /stemming_esp_
+{
+  "settings": {
+    "analysis": {
+    "filter": {
+      "test_sinonimo": {
+        "type": "synonym",
+        "synonyms": [
+          "amar", "disfrutar"
+        ]
+
+      },
+      "test_stemming":{
+        "type": "stemmer",
+        "name": "spanish"
+      }
+  },
+  "analyzer": {
+    "mi_analizador":{
+      "tokenizer": "standard",
+      "filter": [
+        "lowercase",
+        "test_sinonimo",
+        "test_stemming"
+      ]
+    }
+  }
+  
+  }
+},
+"mappings": {
+ "properties": {
+  "descripcion": {
+    "type": "text",
+    "analyzer": "mi_analizador"
+  }
+ }
+ }
+}
+
+
+PUT /stemming_esp_/_doc/1
+{
+  "descripcion": "¡Hay que amar aprendiendo!"
+}
+
+#Busqueda con resultado obtenido por stemming
+GET /stemming_esp_/_search
+{
+  "query": {
+    "match": {
+    "descripcion": "amar aprendizaje"
+  }
+  }
+}
+
+#Busqueda con resultado obtenido por sinonimo + stemming
+GET /stemming_esp_/_search
+{
+  "query": {
+    "match": {
+    "descripcion": "disfrutar aprendizaje"
+  }
+  }
+}

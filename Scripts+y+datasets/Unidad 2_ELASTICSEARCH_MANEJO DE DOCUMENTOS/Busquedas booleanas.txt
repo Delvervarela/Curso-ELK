@@ -1,0 +1,129 @@
+#Busquedas booleanas must con 2 condiciones
+GET /productos/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": {
+          "name": "glass"
+        }},
+        {"range": {
+          "price": {
+            "lte": 150
+          }
+        }}
+      ]
+    }
+  }
+}
+
+#Busqueda con must y filter
+GET /productos/_search
+{
+  "query": {
+    "bool": {
+    "must": [
+    {
+      "match": {
+      "name": "helmet"
+    }}
+  ],
+  "filter": [
+    {"range": {
+      "price": {
+        "lte": 150
+      }
+    }}
+  ]
+  
+  }}
+}
+
+#Busqueda booleana MUST y Filter
+GET /productos/_search
+{
+  "query": {
+    "bool": {
+    "must": [
+    {"match": {
+      "name": "glass"
+    }}
+  ],
+  "filter": [
+    {"range": {
+      "price": {
+        "lte": 500
+      }
+    }}
+  ]
+  
+  
+  }}
+}
+
+
+#Busqueda booleana must, must not y filter
+GET /productos/_search
+{
+  "query": {
+    "bool": {
+    "must": [
+    {"match": {
+      "name": "glass"
+    }}
+  ],
+  "must_not": [
+    {"match": {
+      "name": "meal"
+    }}
+  ],
+  "filter": [
+    {"range": {
+      "price": {
+        "lte": 100
+      }
+    }}
+  ]
+  }}
+}
+
+#Busqueda booleana must, must not, should y filter
+GET /productos/_search
+{
+  "query": {
+    "bool": {
+    "must": [
+    {"match": {
+      "name": "glass"
+    }}
+  ],
+  "must_not": [
+    {"match": {
+      "name": "meal"
+    }}
+  ],
+  "should": [
+    {"range": {
+      "price": {
+        "gte": 10,
+        "lte": 150
+      }
+    }}
+  ],
+  "filter": [
+    {"range": {
+      "price": {
+        "lte": 100
+      }
+    }}
+  ]
+  }}
+}
+
+GET /productos/_search
+{
+  "query": {
+    "ids": {
+    "values": [45, 46, 47,48, 49, 50]}
+  }
+}
